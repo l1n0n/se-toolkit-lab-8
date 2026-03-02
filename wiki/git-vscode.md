@@ -55,7 +55,25 @@
 
 1. Open `VS Code`.
 2. [Open the `VS Code Terminal`](./vs-code.md#open-the-vs-code-terminal).
-3. To navigate to the directory where you want to clone the repo,
+3. To create the [directory](./file-system.md#directory) where you want to clone the repo,
+
+   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+
+   ```terminal
+   mkdir -p <directory-path>
+   ```
+
+   Replace `<directory-path>` with a [path](./file-system.md#path) to the directory.
+
+   The output should be empty.
+
+   Example:
+
+   ```terminal
+   mkdir -p microsoft
+   ```
+
+4. To navigate to the directory where you want to clone the repo,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -63,13 +81,21 @@
    cd <directory-path>
    ```
 
+   The current directory in the [shell prompt](./shell.md#shell-prompt) should now end in `<directory-path>`
+
    Example:
 
    ```terminal
-   cd ~/Desktop/software-engineering-toolkit
+   username@hostname:~$ cd microsoft
    ```
 
-4. To clone the repo,
+   After `cd`:
+
+   ```terminal
+   username@hostname:~/microsoft$
+   ```
+
+5. To clone the repo,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -77,15 +103,17 @@
    git clone <repo-url>
    ```
 
+   Replace [`<repo-url>`](./github.md#repo-url).
+
    Example:
 
    ```terminal
    git clone https://github.com/microsoft/vscode
    ```
 
-5. If `git` asks for a password, provide [your PAT](./github.md#create-a-pat-classic).
+6. If `git` asks for a password, provide [your `GitHub` PAT](./github.md#create-a-pat-classic).
 
-6. To verify that the repo was cloned,
+7. To verify that the repo was cloned,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -93,8 +121,19 @@
    ls
    ```
 
-   You should see `<repo-name>` - the output of the command.
-   This is the directory that contains the cloned repo.
+   The output should include the `<repo-name>` - the name of the repo.
+
+8. To verify that the repo isn't empty,
+
+   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+
+   ```terminal
+   ls <repo-name>
+   ```
+  
+   Replace `<repo-name>`.
+
+   The output should be the list of names of files in the repo.
 
 ### Clone the repo using the `Command Palette`
 
