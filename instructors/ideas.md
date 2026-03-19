@@ -77,6 +77,8 @@
   Keep Decision 1
 - Remove coverage section
 - Specify severity for violations
+- Allow some duplication in wiki (not DRY)
+  Reuse large sections, inline small sections, refer to them as *Note:* (link to the small section)
 
 ### Current lab - TODO - Config
 
