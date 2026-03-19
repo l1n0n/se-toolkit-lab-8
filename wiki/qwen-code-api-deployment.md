@@ -5,8 +5,8 @@
 - [About the `Qwen Code` API deployment](#about-the-qwen-code-api-deployment)
 - [Deploy the `Qwen Code` API (REMOTE)](#deploy-the-qwen-code-api-remote)
   - [Clone the `Qwen Code` API repository (REMOTE)](#clone-the-qwen-code-api-repository-remote)
-  - [Pull the latest changes from the `Qwen Code` API repository (REMOTE)](#pull-the-latest-changes-from-the-qwen-code-api-repository-remote)
   - [Enter the `Qwen Code` API repository directory (REMOTE)](#enter-the-qwen-code-api-repository-directory-remote)
+  - [Pull the latest changes from the `Qwen Code` API repository (REMOTE)](#pull-the-latest-changes-from-the-qwen-code-api-repository-remote)
   - [Prepare the environment in the `Qwen Code` API repository (REMOTE)](#prepare-the-environment-in-the-qwen-code-api-repository-remote)
   - [Start the `Qwen Code` API (REMOTE)](#start-the-qwen-code-api-remote)
 
@@ -35,6 +35,16 @@ Complete these steps:
 
    to `~/qwen-code-api`.
 
+### Enter the `Qwen Code` API repository directory (REMOTE)
+
+1. To enter the repository directory,
+
+   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+
+   ```terminal
+   cd ~/qwen-code-api
+   ```
+
 ### Pull the latest changes from the `Qwen Code` API repository (REMOTE)
 
 1. To pull the latest changes,
@@ -45,14 +55,10 @@ Complete these steps:
    git pull
    ```
 
-### Enter the `Qwen Code` API repository directory (REMOTE)
-
-1. To enter the repository directory,
-
-   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+   The output should be:
 
    ```terminal
-   cd ~/qwen-code-api
+   Already up to date.
    ```
 
 ### Prepare the environment in the `Qwen Code` API repository (REMOTE)
