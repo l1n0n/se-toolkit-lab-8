@@ -24,7 +24,7 @@ Start by reading the [official nanobot repository](https://github.com/HKUDS/nano
 1. Create a repo-local `nanobot/` project and install the framework there from the official repository at the lab-tested commit:
 
    ```terminal
-   uv init nanobot
+   uv init --python 3.14.2 nanobot
    cd nanobot
    uv add "nanobot-ai @ git+https://github.com/HKUDS/nanobot.git@e7d371ec1e6531b28898ec2c869ef338e8dd46ec"
    ```
