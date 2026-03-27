@@ -130,15 +130,13 @@ docker compose --env-file .env.docker.secret down
 
 ### 1.4. Start the services on your VM
 
-1. Make sure the [Docker daemon](../../wiki/docker.md#start-docker) is running on your VM.
-
-2. Start the services in the background:
+1. Start the services in the background:
 
    ```terminal
    docker compose --env-file .env.docker.secret up --build -d
    ```
 
-3. Check that the containers are running:
+2. Check that the containers are running:
 
    ```terminal
    docker compose --env-file .env.docker.secret ps --format "table {{.Service}}\t{{.Status}}"
